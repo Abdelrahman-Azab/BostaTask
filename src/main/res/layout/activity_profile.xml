@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical"
+       >
+         <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+             android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Clementine Bauch"/>
+
+        <TextView
+            android:id="@+id/useraddress_tv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            tools:text="Douglas Extension"/>
+
+
+        <TextView
+            android:id="@+id/myalbums_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="My Albums"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/albums_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            />
+
+      </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
